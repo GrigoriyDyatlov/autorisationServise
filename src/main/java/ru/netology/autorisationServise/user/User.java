@@ -2,33 +2,32 @@ package ru.netology.autorisationServise.user;
 
 import lombok.Getter;
 import lombok.Setter;
-import ru.netology.autorisationServise.authorities.Authorities;
 
-import java.util.ArrayList;
-import java.util.List;
-
-@Setter
 @Getter
+@Setter
 public class User {
     private String userId;
     private String password;
-    private List<Authorities> authorities = new ArrayList<>();
 
     public User() {
     }
 
-    public User(String userId, String password, List<Authorities> authorities) {
+    public User(String userId, String password) {
         this.userId = userId;
         this.password = password;
-        this.authorities = authorities;
     }
-
-    public String getPassword() {
+    public String getUserId(){
+        return userId;
+    }
+    public String getPassword(){
         return password;
     }
 
-    public List<Authorities> getAuthorities() {
-        return authorities;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
