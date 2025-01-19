@@ -8,6 +8,7 @@ import ru.netology.autorisationServise.authorities.Authorities;
 import ru.netology.autorisationServise.service.UserService;
 
 import java.util.List;
+
 @Component
 @RestController
 public class UserController {

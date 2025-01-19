@@ -8,16 +8,16 @@ import ru.netology.autorisationServise.user.User;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
+
 @Component
 @Repository
 public class UserRepositoryImpl implements UserRepository {
     private ConcurrentHashMap<String, User> users;
 
 
-    public UserRepositoryImpl (){
-    users.put("Petya", new User("Petya", "1234",
-            List.of(Authorities.READ, Authorities.DELETE)));
-}
+    public UserRepositoryImpl() {
+    }
+
     @Override
     public List<Authorities> getUserAuthorities(String userId, String password) {
         if (users.containsKey(userId)) {

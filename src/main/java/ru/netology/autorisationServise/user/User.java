@@ -16,18 +16,19 @@ public class User {
 
     public User() {
     }
-    public String getPassword(){
-        return password;
-    }
-
-    public List<Authorities> getAuthorities() {
-        return authorities;
-    }
 
     public User(String userId, String password, List<Authorities> authorities) {
         this.userId = userId;
         this.password = password;
         this.authorities = authorities;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public List<Authorities> getAuthorities() {
+        return authorities;
     }
 
 }
