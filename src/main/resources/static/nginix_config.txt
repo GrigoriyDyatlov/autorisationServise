@@ -43,7 +43,7 @@ http {
     server {
         listen       80;
         server_name  localhost;
-        root C:\DyatlovGM\autorisationServise\src\main\resources\static;
+        root C:\DyatlovGM\autorisationServise\src\main\resources\static\SiginIn.html;
 
         #charset koi8-r;
 
@@ -53,7 +53,7 @@ http {
 	}
 
     location /SiginIn {
-        root \data;
+        alias C:\DyatlovGM\autorisationServise\src\main\resources\static\SiginIn.html;
         }
 
         error_page   500 502 503 504  /50x.html;
