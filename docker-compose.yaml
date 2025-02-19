@@ -1,0 +1,7 @@
+version: '1'
+
+services:
+  app1:
+    image:
+    ports:
+  - '8090:8090'
